@@ -80,7 +80,7 @@ def insert_data():
         my_tree.delete(data)
 
     for result in reverse(read()):
-        my_tree.insert(parent='', index='end', iid=0, text="", values=(result), tag="orow")
+        my_tree.insert(parent='', index='end', iid=result, text="", values=(result), tag="orow")
 
     my_tree.tag_configure('orow', background='#EEEEEE')
     my_tree.grid(row=1, column=5, columnspan=4, rowspan=5, padx=10, pady=10)
@@ -95,7 +95,7 @@ def delete_data():
         my_tree.delete(data)
 
     for result in reverse(read()):
-        my_tree.insert(parent='', index='end', iid=0, text="", values=(result), tag="orow")
+        my_tree.insert(parent='', index='end', iid=result, text="", values=(result), tag="orow")
 
     my_tree.tag_configure('orow', background='#EEEEEE')
     my_tree.grid(row=1, column=5, columnspan=4, rowspan=5, padx=10, pady=10)
@@ -109,7 +109,7 @@ def update_data():
         my_tree.delete(data)
 
     for result in reverse(read()):
-        my_tree.insert(parent='', index='end', iid=0, text="", values=(result), tag="orow")
+        my_tree.insert(parent='', index='end', iid=result, text="", values=(result), tag="orow")
 
     my_tree.tag_configure('orow', background='#EEEEEE')
     my_tree.grid(row=1, column=5, columnspan=4, rowspan=5, padx=10, pady=10)
